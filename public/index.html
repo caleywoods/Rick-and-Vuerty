@@ -1,0 +1,20 @@
+<script src="https://unpkg.com/vue"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<html>
+  <div id="app">
+    <h2 id="banner-text">Todos</h2>
+    <div id="todo-list">
+      <ul>
+        <li
+          is="todo-item"
+          v-for="todo in todos"
+          v-bind:class="{'task-complete': todo.complete}"
+          v-bind:todo="todo">
+        </li>
+      </ul>
+    </div>
+  </div>
+</html>
+<script src="js/app.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">

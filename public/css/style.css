@@ -1,0 +1,35 @@
+body {
+  align-items: center;
+  background-image: url(https://unsplash.it/g/1920/1080/?blur);
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+}
+
+#app {
+  max-width: 50%;
+}
+
+#banner-text {
+  font-size: 3rem;
+  text-align: center;
+}
+
+ul > li {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+li > i {
+  color: #e8bdbd;
+  cursor: pointer;
+}
+
+.task-complete  > i {
+  color: #e4fbdd;
+}
+
+.task-complete {
+  color: #ccc;
+  text-decoration: line-through;
+}
